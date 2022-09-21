@@ -2,6 +2,8 @@
 @import '~/assets/scss/mixins';
 
 body {
+    padding: 34px 165px;
     background-color: $light-cream;
     font-family: $plus-kakarta-sans;
+    @include font-body-m;
 }

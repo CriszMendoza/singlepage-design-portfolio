@@ -1,6 +1,7 @@
 <template>
   <div>
-    Free Consultation
+    <my-header/>
+    
 
     Design solutions made easy
 
@@ -30,15 +31,22 @@
     Free Consultation
 
     Free Consultation
+    <BaseArrow direction='left'/>
+    <BaseArrow direction='right'/>
+    <base-button type='primary' title='Free Consultation'/>
   </div>
 </template>
 
 <script>
 import BaseButton from '~/components/ux/BaseButton'
+import BaseArrow from '~/components/ux/BaseArrow'
+import MyHeader from '~/components/layout/MyHeader'
 
 export default {
   components:{
-    BaseButton
+    BaseButton,
+    BaseArrow,
+    MyHeader
   }
 
 }

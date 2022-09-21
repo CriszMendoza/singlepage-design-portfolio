@@ -26,6 +26,7 @@ export default {
     @import '~/assets/scss/main';
 
     button{
+        display: block;
         width: 228px;
         height: 56px;
         border: none;
@@ -35,7 +36,7 @@ export default {
         @include font-button;
     }
 
-    .principal{
+    .primary{
         background-color: $black;
         &:hover{
             background-color: $galactic-blue;
