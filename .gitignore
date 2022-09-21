@@ -14,3 +14,11 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# Nuxt dev/build outputs
+.output
+.nuxt
+# Node dependencies
+node_modules
+# System files
+*.log

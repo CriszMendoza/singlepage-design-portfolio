@@ -1,0 +1,30 @@
+@mixin font-heading-l {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 70px;
+}
+
+@mixin font-heading-m {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 51px;
+}
+
+@mixin font-heading-s {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin font-body-m {
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin font-button {
+    color: $light-cream;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+}
