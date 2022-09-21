@@ -1,11 +1,8 @@
 <template>
   <div>
     <my-header/>
-    
-    <main>
-      <h1>Design solutions made easy</h1>
-      <p>With over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.</p>
-    </main>
+
+    <Main/>
 
     <Patterns/>
 
@@ -37,6 +34,7 @@ import BaseArrow from '~/components/ux/BaseArrow'
 import MyHeader from '~/components/layout/MyHeader'
 import Patterns from '~/components/layout/Patterns'
 import Hero from '~/components/layout/Hero'
+import Main from '~/components/layout/Main'
 
 export default {
   components:{
@@ -44,28 +42,13 @@ export default {
     BaseArrow,
     MyHeader,
     Patterns,
-    Hero
+    Hero,
+    Main
   }
 
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/main';
-
-main{
-  width: 752px;
-  text-align: center;
-  margin: 0 auto 80px;
-  h1{
-    margin-bottom: 23px;
-    @include font-heading-l;
-  }
-}
-
-
-
-
-
 
 </style>
