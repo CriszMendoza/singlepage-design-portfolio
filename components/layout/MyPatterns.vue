@@ -1,10 +1,10 @@
 <template>
-        <section> 
+    <section class="container"> 
         <div v-for="pattern in patterns" :key="pattern.class[0]"   :class="pattern.class">
             <img :src="pattern.img" :alt="pattern.name">
             <p>{{pattern.name}}</p>
         </div>
-        </section>
+    </section>
 </template>
 
 <script>

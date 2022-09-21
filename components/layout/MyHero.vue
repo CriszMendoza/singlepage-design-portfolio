@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
 
     <img src="/image-amy.webp" alt="Hero">
 

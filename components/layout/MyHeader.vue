@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="container">
     <img src="/logo.svg" alt="Logo">
     <base-button title="Free Consultation" type='primary'/>
   </header>
@@ -17,9 +17,9 @@ export default {
 
 <style lang="scss" scoped>
   header{
+    margin: 34px 0 66px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 66px;
   }
 
 </style>
