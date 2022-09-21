@@ -2,24 +2,18 @@
   <div>
     <my-header/>
     
+    <main>
+      <h1>Design solutions made easy</h1>
+      <p>With over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.</p>
+    </main>
 
-    Design solutions made easy
+    <Patterns/>
 
-    With over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.
+    <Hero/>
 
-    Graphic Design
-    UI/UX
-    Apps
-    Photography
-    Illustrations
-    Motion Graphics
+   
 
-    I'm Amy, and I'd love to work on your next project
-
-    I love working with others to create beautiful design solutions. I've designed everything from brand illustrations 
-    to complete mobile apps. I'm also handy with a camera!
-
-    Free Consultation
+    
 
     My Work
 
@@ -41,12 +35,16 @@
 import BaseButton from '~/components/ux/BaseButton'
 import BaseArrow from '~/components/ux/BaseArrow'
 import MyHeader from '~/components/layout/MyHeader'
+import Patterns from '~/components/layout/Patterns'
+import Hero from '~/components/layout/Hero'
 
 export default {
   components:{
     BaseButton,
     BaseArrow,
-    MyHeader
+    MyHeader,
+    Patterns,
+    Hero
   }
 
 }
@@ -55,9 +53,19 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/scss/main';
 
-div{
-  background-color: $light-cream;
+main{
+  width: 752px;
+  text-align: center;
+  margin: 0 auto 80px;
+  h1{
+    margin-bottom: 23px;
+    @include font-heading-l;
+  }
 }
+
+
+
+
 
 
 </style>

@@ -13,6 +13,7 @@ export default{
         ]
     },
     css: [
+        '~assets/css/normalize.css',
         '~assets/scss/main.scss',
     ],
 }
