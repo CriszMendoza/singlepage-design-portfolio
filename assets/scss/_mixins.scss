@@ -1,3 +1,10 @@
+@mixin font-button {
+    color: $light-cream;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 16px;
+}
+
 @mixin font-heading-l {
     font-size: 56px;
     line-height: 70px;
@@ -22,9 +29,3 @@
     font-weight: 500;
 }
 
-@mixin font-button {
-    color: $light-cream;
-    font-weight: 700;
-    line-height: 28px;
-    font-size: 16px;
-}

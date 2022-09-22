@@ -12,16 +12,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import '~/assets/scss/main';
-    
+@import '~/assets/scss/main';
+
+main{
+  width: 752px;
+  text-align: center;
+  margin: 0px auto 80px;
+  h1{
+    margin-bottom: 23px;
+    @include font-heading-l;
+  }
+  p{
+    color: $medium-brown;
+  }
+}
+
+@media (max-width: 768px) {
     main{
-      width: 752px;
-      text-align: center;
-      margin: 0px auto 80px;
+      width: 690px;
+      margin-bottom: 64px;
       h1{
-        margin-bottom: 23px;
-        @include font-heading-l;
+        font-size: 44px;
+        line-height: 55px;
       }
     }
+  }
     
 </style>

@@ -14,7 +14,7 @@ export default {
             patterns: [
                 { 
                     img: '/pattern-graphic-design.svg',
-                    name: 'Design',
+                    name: 'Graphic Design',
                     class: ['design', 'img-l']
                 },
                 { 
@@ -54,14 +54,14 @@ export default {
     @import '~/assets/scss/main';
 
     section{
-        height: 364px;
+        height: 609px;
         display: grid;
         margin-bottom: 136px;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
-        "design design ui-ux apps photography photography"
-        "design design ilustrations ilustrations graphics graphics";
+        "design design ui-ux        apps         photography photography"
+        "design design ilustrations ilustrations graphics    graphics";
         gap: 24px;
 
         div{
@@ -92,7 +92,6 @@ export default {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 30px;
-                font-style: normal;
             }
         }
     }
@@ -121,6 +120,17 @@ export default {
     .graphics{
         background-color: $dark-purple;
         grid-area: graphics;
+    }
+
+    @media (max-width: 768px){
+        section{ 
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "design      design       ui-ux        apps"
+            "design      design       ilustrations ilustrations"
+            "photography photography  graphics     graphics";
+        }
     }
 
 </style>

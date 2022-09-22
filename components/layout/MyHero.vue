@@ -47,8 +47,31 @@ export default {
             p{
                 margin-top: 34px;
                 margin-bottom: 32px;
+                color: $medium-brown;
             }
         }
     }
+
+
+    @media (max-width: 768px){
+
+    section{
+        img{
+            width: 364px;
+            height: 364px;
+        }
+        div{
+            width: 339px;
+            h2{
+                margin-top: 0px;
+                @include font-heading-s;
+            }
+        }
+    }
+
+    .container{
+        padding: 0;
+    }
+}
 
 </style>

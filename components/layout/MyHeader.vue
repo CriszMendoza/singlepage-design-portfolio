@@ -16,10 +16,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  header{
-    margin: 34px 0 66px;
-    display: flex;
-    justify-content: space-between;
-  }
+header{
+  margin: 34px 0 66px;
+  display: flex;
+  justify-content: space-between;
+}
 
+@media (max-width: 768px){
+  header{
+    margin-bottom: 64px;
+  }
+}
 </style>

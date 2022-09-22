@@ -49,10 +49,10 @@ section{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 30px;
-        overflow: hidden;
+        overflow: auto;
 
         img{
-            border-radius: 18px;
+            border-radius: 8px;
         }
     }
 
@@ -64,7 +64,13 @@ section{
         button{
             margin: 0 8px;
         }
-    }
+    }   
+}
+
+@media (max-width: 768px){
+    section {
+        margin-top: 120px;
+    }    
 }
 
 </style>

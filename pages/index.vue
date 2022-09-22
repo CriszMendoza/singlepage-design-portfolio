@@ -8,9 +8,9 @@
 
     <my-hero/>
 
-    <my-work/>  
-
-    <my-footer/>
+    <my-work/>
+    
+    <my-banner/>
 
     <my-header/>
     
@@ -23,7 +23,7 @@ import MyPatterns from '~/components/layout/MyPatterns'
 import MyHero from '~/components/layout/MyHero'
 import MyMain from '~/components/layout/MyMain'
 import MyWork from '~/components/layout/MyWork'
-import MyFooter from '~/components/layout/MyFooter'
+import MyBanner from '~/components/layout/MyBanner'
 
 export default {
   components:{
@@ -32,7 +32,7 @@ export default {
     MyHero,
     MyMain,
     MyWork,
-    MyFooter
+    MyBanner
   }
 
 }
