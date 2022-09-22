@@ -15,27 +15,54 @@ export default {
 @import '~/assets/scss/main';
 
 main{
-  width: 752px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 0px auto 80px;
+
   h1{
-    margin-bottom: 23px;
-    @include font-heading-l;
+    @include mobile-font-heading-l;
   }
+
   p{
-    color: $medium-brown;
+    width: 285px;
+    margin-top: 16px;    
   }
 }
 
-@media (max-width: 768px) {
-    main{
-      width: 690px;
-      margin-bottom: 64px;
-      h1{
-        font-size: 44px;
-        line-height: 55px;
-      }
+@media (min-width: 768px) {
+  main {
+    margin-top: 64px;
+
+    h1{
+      @include tablet-font-heading-l;
+    }
+
+    p{
+      width: 573px;
+      margin-top: 27px;
+      @include tablet-font-body;
+      
     }
   }
+}
+
+@media (min-width: 1440px) {
+  main {
+    margin-top: 66px;
+
+    h1{
+      @include desktop-font-heading-l;
+    }
+
+    p{
+      width: 730px;
+      margin-top: 23px;
+      @include desktop-font-body;
+      
+    }
+  }
+}
     
 </style>

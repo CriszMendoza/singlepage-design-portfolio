@@ -2,19 +2,29 @@
 @import '~/assets/scss/mixins';
 
 body {
+    padding: 16px 0;
     background-color: $light-cream;
     font-family: $plus-kakarta-sans;
-    @include font-body-m;
+    @include mobile-font-body;
 }
 
 .container{
-    padding: 0px 165px;
-}   
+    padding: 0px 16px;
+} 
 
 
-@media (max-width: 768px) {
+@media (min-width:768px){
+    body{
+        padding: 34px 0;
+    }
+    
     .container{
         padding: 0px 39px;
-    }  
+    } 
 }
-  
+
+@media (min-width:1440px){
+    .container{
+        padding: 0px 165px;
+    } 
+}

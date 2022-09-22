@@ -37,27 +37,29 @@ export default {
 @import '~/assets/scss/main';
 
 section{
-    margin-top: 88px;
+    margin-top: 100px;
 
     h3{
         text-align: center;
-        @include font-heading-s;
+        @include mobile-font-heading-s;
     }
 
     .slider{
-        margin-top: 56px;
+        margin-top: 32px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
+        gap: 15px;
         overflow: auto;
 
         img{
+            width: 270px;
+            height: 180px;
             border-radius: 8px;
         }
     }
 
     .slider-controls{
-        margin-top: 56px;
+        margin-top: 32px;
         display: flex;
         justify-content: center;
 
@@ -67,9 +69,35 @@ section{
     }   
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
     section {
-        margin-top: 120px;
+        margin-top: 138px;
+        h3{
+            @include tablet-font-heading-s;
+        }
+        .slider{
+            margin-top: 56px;
+            gap: 30px;
+            img{
+                width: 540px;
+                height: 360px;
+            }
+        }
+        .slider-controls{
+            margin-top: 56px;
+            button{
+                margin: 0 8px;
+            }
+        }  
+    }    
+}
+
+@media (min-width: 1440px){
+    section {
+        margin-top: 88px;
+        h3{
+            @include desktop-font-heading-s;
+        }  
     }    
 }
 

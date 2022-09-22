@@ -3,29 +3,96 @@
     font-weight: 700;
     line-height: 28px;
     font-size: 16px;
+    color: $light-cream;
 }
 
-@mixin font-heading-l {
+@mixin desktop-font-heading-l {
     font-size: 56px;
     line-height: 70px;
     font-weight: 700;
+    color: $black;
 }
 
-@mixin font-heading-m {
+@mixin desktop-font-heading-m {
     font-size: 40px;
     line-height: 51px;
     font-weight: 700;
+    color: $black;
 }
 
-@mixin font-heading-s {
+@mixin desktop-font-heading-s {
     font-size: 32px;
     line-height: 40px;
     font-weight: 700;
+    color: $black;
 }
 
-@mixin font-body-m {
+@mixin desktop-font-body {
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
+    color: $medium-brown;
+}
+
+// Tablet
+
+@mixin tablet-font-heading-l {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: 700;
+    color: $black;
+}
+
+@mixin tablet-font-heading-m {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin tablet-font-heading-s {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: $black;
+}
+
+@mixin tablet-font-body {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: $medium-brown;
+}
+
+
+
+// Mobile
+
+@mixin mobile-font-heading-l {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    color: $black;
+}
+
+@mixin mobile-font-heading-m {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: $black;
+}
+
+@mixin mobile-font-heading-s{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $black;
+}
+
+
+@mixin mobile-font-body {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $medium-brown;
 }
 

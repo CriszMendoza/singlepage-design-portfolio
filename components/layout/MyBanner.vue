@@ -7,7 +7,6 @@
                 <p>I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
                 free consultation. Then we can move forward from there.</p>
             </div>
-
             <base-button type='secondary' title='Free Consultation'/>
         </div>
     </section>
@@ -27,52 +26,74 @@ export default {
 @import '~/assets/scss/main';
 
 section{
-
+    margin: 100px 0 40px;
     .banner{
-        height: 320px;
-        margin: 88px 0px 56px;
         background-color: $black;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
-    }
-
-    .content{   
-        width: 540px; 
-        h2{
-            color: $light-cream;
-            @include font-heading-m;
-            margin-bottom: 25px;
+        padding: 48px 0;
+        
+        .content{
+            width: 295px;
+            text-align: center;
+            h2{
+                @include mobile-font-heading-m;
+                color: $light-cream;
+            }
+            p{
+                margin-top: 24px;
+            }
         }
-        p{
-            color: $light-cream;
-            @include font-body-m;
+
+        button{
+            margin-top: 24px;
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px){
     section{
+        margin: 120px 0 56px;
         .banner{
-            height: 352px;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            margin: 56px 0px 64px;
+            padding: 60px 0;
+            flex-direction: row;
+            justify-content: space-around;
             .content{
-                text-align: center;
+                width: 540px;
                 h2{
-                    margin-top: 56px;
-                    @include font-heading-s;
+                    @include tablet-font-heading-m;
+                    color: $light-cream;
+                }
+                p{
+                    margin-top: 26px;
                 }
             }
+            
             button{
-                margin-top: 25px;
+                    margin-top: 26px;
             }
         }
-    }  
+    }
 }
 
-
-
+@media (min-width: 1440px){
+    section{
+        margin-top: 88px;
+        .banner{
+            padding: 80px 0;
+            .content{
+                width: 540px;
+                text-align: initial;
+                h2{
+                    @include desktop-font-heading-m;
+                    color: $light-cream;
+                }
+                p, button{
+                    margin-top: 26px;
+                }
+            }
+        }
+    }
+}
 </style>

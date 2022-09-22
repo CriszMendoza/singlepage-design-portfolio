@@ -1,19 +1,12 @@
 <template>
   <div>
     <my-header/>
-
     <my-main/>
-
     <my-patterns/>
-
     <my-hero/>
-
     <my-work/>
-    
     <my-banner/>
-
     <my-header/>
-    
   </div>
 </template>
 
@@ -34,10 +27,5 @@ export default {
     MyWork,
     MyBanner
   }
-
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

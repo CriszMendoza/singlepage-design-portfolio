@@ -1,6 +1,6 @@
 <template>
     <section class="container"> 
-        <div v-for="pattern in patterns" :key="pattern.class[0]"   :class="pattern.class">
+        <div v-for="pattern in patterns" :key="pattern.class"   :class="pattern.class">
             <img :src="pattern.img" :alt="pattern.name">
             <p>{{pattern.name}}</p>
         </div>
@@ -15,32 +15,32 @@ export default {
                 { 
                     img: '/pattern-graphic-design.svg',
                     name: 'Graphic Design',
-                    class: ['design', 'img-l']
+                    class: 'design'
                 },
                 { 
                     img: '/pattern-ui-ux.svg',
                     name: 'UI/UX',
-                    class: ['ui-ux', 'img-s']
+                    class: 'ui-ux',
                 },
                 { 
                     img: '/pattern-apps.svg',
                     name: 'Apps',
-                    class: ['apps', 'img-s']
+                    class: 'apps',
                 },
                 { 
                     img: '/pattern-photography.svg',
                     name: 'Photography',
-                    class: ['photography', 'img-m']
+                    class: 'photography',
                 },
                 { 
                     img: '/pattern-illustrations.svg',
                     name: 'Ilustrations',
-                    class: ['ilustrations', 'img-m']
+                    class: 'ilustrations'
                 },
                 { 
                     img: '/pattern-motion-graphics.svg',
                     name: 'Motion Graphics',
-                    class: ['graphics', 'img-m']
+                    class: 'graphics',
                 }
 
             ] 
@@ -54,14 +54,18 @@ export default {
     @import '~/assets/scss/main';
 
     section{
-        height: 609px;
+        margin-top: 32px;
+        height: 1164px;
         display: grid;
-        margin-bottom: 136px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
-        "design design ui-ux        apps         photography photography"
-        "design design ilustrations ilustrations graphics    graphics";
+        "design       design"
+        "design       design"
+        "ui-ux        apps"
+        "ilustrations ilustrations"
+        "photography  photography"
+        "graphics     graphics";
         gap: 24px;
 
         div{
@@ -72,19 +76,6 @@ export default {
 
             img{   
                 align-self: end;
-
-                &.img-s{
-                    width: 64px;
-                    height: 64px;
-                }
-                &.img-m{
-                    width: 128px;
-                    height: 64px;
-                }
-                &.img-l{
-                    width: 128px;
-                    height: 192px;
-                }
             }
 
             p{
@@ -122,15 +113,28 @@ export default {
         grid-area: graphics;
     }
 
-    @media (max-width: 768px){
-        section{ 
+    @media (min-width:768px) {
+        section{
+            margin-top: 64px;
+            height: 690px;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas: 
-            "design      design       ui-ux        apps"
-            "design      design       ilustrations ilustrations"
-            "photography photography  graphics     graphics";
+            "design       design      ui-ux        apps"
+            "design       design      ilustrations ilustrations"
+            "photography  photography graphics     graphics"
         }
     }
 
+    @media (min-width:1440px) {
+        section{
+            margin-top: 80px;
+            height: 364px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "design design ui-ux        apps         photography  photography"
+            "design design ilustrations ilustrations graphics     graphics"
+        }
+    }
 </style>

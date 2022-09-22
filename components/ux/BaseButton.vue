@@ -26,13 +26,13 @@ export default {
     @import '~/assets/scss/main';
 
     button{
+        width: 176px;
+        height: 44px;
         display: block;
-        width: 228px;
-        height: 56px;
+        padding: 0;
         border: none;
         border-radius: 28px;
         cursor: pointer;
-        color: $light-cream;
         @include font-button;
     }
 
@@ -49,5 +49,12 @@ export default {
             background-color: $summer-yellow;
         }
     }
+
+    @media (min-width: 768px) {
+    button {
+        width: 228px;
+        height: 56px;
+    }
+  }
 
 </style>
